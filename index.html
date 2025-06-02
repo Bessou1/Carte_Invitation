@@ -38,12 +38,22 @@
       transform: rotateY(180deg);
     }
 
-    .card-front, .card-back {
+    .card-front {
       position: absolute;
       width: 100%;
       height: 100%;
       border-radius: 15px;
       overflow: hidden;
+      backface-visibility: hidden;
+      box-shadow: 0 10px 30px rgba(102, 51, 153, 0.3);
+    }
+    
+    .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      overflow: auto;
       backface-visibility: hidden;
       box-shadow: 0 10px 30px rgba(102, 51, 153, 0.3);
     }
@@ -355,25 +365,25 @@
                     <svg class="dove" viewBox="0 0 100 100"><path d="M85,30 C75,15 55,20 50,35 C45,20 25,15 15,30 C5,45 15,65 50,85 C85,65 95,45 85,30 Z" fill="#9370DB"/></svg>
                 </div>
                 <div class="host-section">
-                    <div class="host-section-title">Invité d'honneur</div>
+                  
                     <div class="host-section-name">Sagou Grace-Esther</div>
                 </div>
                 <h3 class="back-title">Programme des Célébrations</h3>
                 <div class="event">
-                    <div class="event-date">Le 07</div>
-                    <div class="event-location">Baptême à l'église méthodiste jubilé de Cocody</div>
+                    <div class="event-date">Le Samedi 07 Juin 2025</div>
+                    <div class="event-location">Baptême à l'église méthodiste Temple le Jubilé de Cocody</div>
                     <div class="event-time">Culte à 08h</div>
                     <div class="event-description">Cérémonie de baptême et accueil dans la communauté des croyants</div>
                 </div>
                 <div class="event">
-                    <div class="event-date">Le 08</div>
+                    <div class="event-date">Le Dimanche 08 Juin 2025</div>
                     <div class="event-location">Première communion à l'église méthodiste Bethesda de Bingerville</div>
-                    <div class="event-time">Culte à 09h</div>
+                    <div class="event-time">Culte à 09h30</div>
                     <div class="event-description">Partage du pain et du vin en mémoire du sacrifice du Christ</div>
                 </div>
                 <div class="event">
-                    <div class="event-date">Le 14</div>
-                    <div class="event-location">Réception à l'école primaire bon berger de Bingerville</div>
+                    <div class="event-date">Le Samedi 14 Juin 2025</div>
+                    <div class="event-location">Déjeuner à l'école primaire le bon berger de Bingerville</div>
                     <div class="event-time">À 14h</div>
                     <div class="event-description">Célébration festive avec famille et amis</div>
                 </div>
